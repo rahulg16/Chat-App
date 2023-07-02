@@ -6,13 +6,14 @@ const alert = document.querySelector(".alert-msg");
 
 let socket = io();
 let allMessages = [];
-
+let baseURL = window.location.origin || "http://localhost:3000/"
+// console.log("location", window.location.origin);
 async function getAllMessages() {
   let options = {
     method: "GET",
   };
 
-  await fetch("http://localhost:3000/messages", options)
+  await fetch(`${baseURL}/messages`, options)
     .then((res) => res.json())
     .then((data) => {
       allMessages = data.messages;
@@ -46,7 +47,7 @@ async function sendMessage() {
 
   userMessage.value = "";
 
-  await fetch("http://localhost:3000/messages", options)
+  await fetch(`${baseURL}/messages`, options)
     .then((res) => res.json())
     .then((data) => {
       console.log("Result", data);
