@@ -1,0 +1,82 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    /* border: 1px solid green; */
+    width: 50vw;
+    min-height: 50vh;
+    padding: 20px;
+    background-color: rgb(235, 232, 232);
+    border-radius: 20px;
+}
+
+.page-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+#fname {
+    width: 99%;
+    padding: 8px 0px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    background-color: rgb(6, 183, 6);
+    border: none;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    font-weight: 800;
+}
+
+#message-area {
+    width: 99%;
+    margin: 15px 0px;
+}
+
+.messages-container {
+    border: 2px solid black;
+    width: 35vw;
+    max-height: 60vh;
+    min-height: 50vh;
+    border-radius: 10px;
+    padding-left: 20px;
+    overflow: scroll;
+}
+
+.message-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.user-message {
+    margin: 0;
+    word-break: break-all;
+    max-width: 90%;
+}
+
+.user-name {
+    margin: 6px 0px;
+}
+
+.alert-msg {
+    color: red;
+    margin: 5px 0px;
+    display: none;
+}
+
+.visible {
+    display: block;
+}

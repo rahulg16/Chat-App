@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="page-heading">Send Message</h2>
+      <form action="" id="send-msg-form" method="post">
+        <input type="text" id="fname" name="fname" placeholder="Name" /><br />
+        <!-- <input type="" id="message" name="message" placeholder="Your Message Here"/><br /> -->
+        <textarea
+          name="message"
+          id="message-area"
+          cols="30"
+          rows="10"
+          placeholder="Your Message Here"
+        ></textarea>
+        <!-- <p class="alert-msg visible">Please input valid name</p> -->
+        <input type="submit" class="submit-btn" value="Submit" />
+      </form>
+    </div>
+
+    <div class="messages-container">
+      <!-- <div class="message-container">
+        <h4 class="user-name">
+            Rahul:
+        </h4>
+
+        <p class="user-message">wieyriuweriweruwerweuwiweryweryweurwierywieryewuryweuirwdasdasdasdasdsad</p>
+      </div>
+
+      <div class="message-container">
+        <h4 class="user-name">
+            Rahul:
+        </h4>
+
+        <p class="user-message">wieyriuweriweruwerweuwiweryweryweurwierywieryewuryweuirwdasdasdasdasdsad</p>
+      </div> -->
+    </div>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
